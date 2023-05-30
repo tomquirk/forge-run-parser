@@ -1,4 +1,4 @@
-type ContractAddress = `0x${string}`;
+export type ContractAddress = `0x${string}`;
 
 export interface ForgeDeploy {
   receipts: { contractAddress: ContractAddress }[];
@@ -14,7 +14,7 @@ export interface ForgeDeploy {
 export function addressFor(
   contractName: string,
   forgeDeploy: ForgeDeploy
-): string | undefined {
+): ContractAddress | undefined {
   const contractAddress = forgeDeploy.transactions.find(
     (tx) => tx.contractName === contractName
   )?.contractAddress;

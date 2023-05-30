@@ -1,6 +1,6 @@
 {
   "name": "forge-run-parser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "lib/parser.js",
   "types": "lib/parser.d.ts",
